@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.chat-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    margin: 5px;
+}
+
+.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+}
+
+.bot {
+    align-self: flex-start;
+    background-color: #e9ecef;
+    color: black;
+}
+
+.system {
+    text-align: center;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload {
+    display: inline-block;
+    position: relative;
+  
+}
+
+#fileInput {
+    display: none; /* Hide the default file input */
+}
+
+#fileInputLabel {
+    background-color: #007bff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#fileInputLabel:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.loading-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 9999;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pdf-info {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pdfInfoText {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.ripple-button {
+	position: relative;
+	overflow: hidden;
+	border: none;
+	outline: none;
+	background: #2196F3;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 12px 24px;
+	font-size: 16px;
+}
+
+ .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(0);
+            animation: rippleEffect 0.6s linear;
+        }
+
+@keyframes rippleEffect {
+  to {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
